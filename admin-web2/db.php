@@ -2,9 +2,8 @@
 $conn = mysqli_connect(
     "localhost",
     "root",
-    "123456",
-    "web2",
-    3307
+    "",
+    "test",
 );
 
 mysqli_set_charset($conn, "utf8mb4");

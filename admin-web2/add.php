@@ -205,8 +205,8 @@ input:focus, select:focus {
                     </div>
 
                     <div class="form-group">
-                        <label>Giá bán</label>
-                        <input type="number" name="giabandexuat" min="1" required>
+                        <label>Giá bán (Đồng)</label>
+                        <input type="number" name="giabandexuat" min="1" required hidden>
                     </div>
 
                     <div class="form-group">
