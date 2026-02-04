@@ -1,0 +1,48 @@
+
+        .account-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 250px 20px 1fr;
+            padding: 0 20px;
+        }
+        .account-sidebar { background: #f9f9f9; padding: 20px; border-radius: 10px; height: fit-content; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { padding: 12px 15px; margin-bottom: 5px; cursor: pointer; border-radius: 5px; }
+        .sidebar-menu li.active { background: #2d5a27; color: white; }
+
+        .account-content { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); grid-column: 3; }
+        
+        /* Form styling */
+        .info-group { margin-bottom: 15px; }
+        .info-group label { display: block; font-size: 14px; color: #666; margin-bottom: 5px; }
+        .info-group p { font-weight: bold; font-size: 16px; margin: 0; }
+        .info-group input { 
+            width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; 
+            display: none; /* Ẩn mặc định, chỉ hiện khi sửa */
+        }
+
+        .edit-mode .display-data { display: none; }
+        .edit-mode .input-data { display: block; }
+        
+        .btn-group { margin-top: 20px; display: flex; gap: 10px; }
+        .btn-save { background-color: #2d5a27; color: white; display: none; }
+        .btn-cancel { background-color: #ccc; display: none; }
+
+        .info-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo input không bị tràn khung */
+}
+
+.display-data {
+    padding: 10px 0;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+    

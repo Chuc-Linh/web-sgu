@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tài khoản | EcoCycle</title>
+    <link rel="stylesheet" href="test22.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Eco<span>Cycle</span></div>
+    <ul class="nav-links">
+        <li><a href="test11.html">Trang chủ</a></li>
+        <li><a href="cart.html">Giỏ hàng</a></li>
+    </ul>
+</nav>
+
+<div class="account-container" id="accountBox">
+    <aside class="account-sidebar">
+        <ul class="sidebar-menu">
+            <li class="menu-item active" onclick="showTab('profile')">Thông tin cá nhân</li>
+            <li class="menu-item" onclick="showTab('history')">Lịch sử mua hàng</li>
+            <li style="color: #ff4d4d; cursor: pointer;" onclick="logout()">Đăng xuất</li>
+        </ul>
+    </aside>
+
+    <main class="account-content">
+        <div id="profile-tab" class="tab-content">
+            <h2>Hồ sơ của tôi</h2>
+            <hr><br>
+            <form id="profileForm">
+                <div class="info-group">
+                    <label>Họ và tên</label>
+                    <p class="display-data" id="text-name">Nguyễn Văn Eco</p>
+                    <input type="text" class="input-data" id="edit-name">
+                </div>
+
+            <div class="info-group">
+                <label>Email</label>
+                <p class="display-data" id="text-email">hello@ecocycle.vn</p>
+                <input type="email" class="input-data" id="edit-email" value="hello@ecocycle.vn">
+            </div>
+
+            <div class="info-group">
+                <label>Số điện thoại</label>
+                <p class="display-data" id="text-phone">090 123 4567</p>
+                <input type="text" class="input-data" id="edit-phone" value="090 123 4567">
+            </div>
+
+            <div class="info-group">
+                <label>Địa chỉ</label>
+                <p class="display-data" id="text-address">Chưa cập nhật địa chỉ</p>
+                <input type="text" class="input-data" id="edit-address" placeholder="Số nhà, tên đường, quận/huyện, tỉnh/thành">
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn" id="btnEdit" onclick="toggleEdit(true)">Chỉnh sửa thông tin</button>
+                <button type="button" class="btn btn-save" id="btnSave" onclick="saveProfile()">Lưu thay đổi</button>
+                <button type="button" class="btn btn-cancel" id="btnCancel" onclick="toggleEdit(false)">Hủy</button>
+            </div>
+        </form>
+        </div>
+
+        <div id="history-tab" class="tab-content" style="display: none;">
+            <h2>Lịch sử mua hàng</h2>
+            <hr><br>
+            <div id="orderList">
+                </div>
+        </div>
+    </main>
+</div>
+<script src="account.js" defer></script>
+
+</body>
+</html>

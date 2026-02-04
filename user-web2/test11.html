@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" product-card="width=device-width, initial-scale=1.0">
+    <title>EcoCycle</title>
+    <link rel="stylesheet" href="test22.css">
+    <!-- <script src="test11.js" defer></script> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Eco<span>Cycle</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="all-products.html">Sản phẩm</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+        <div class="cart">
+        <ul class="nav-links" id="authLinks">
+            <li><a href="login.html">Đăng Nhập</a></li>
+            <li><a href="signup.html">Đăng Ký</a></li>
+        </ul>
+        </div>
+
+        <script src="auth-check.js"></script>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-product-card">
+            <h1>Hồi sinh rác thải thành nghệ thuật</h1>
+            <p>Khám phá bộ sưu tập đồ dùng độc bản từ nguyên liệu tái chế.</p>
+            <a href="all-products.html" class="btn">Mua sắm ngay</a>
+        </div>
+    </header>
+
+
+    <section class="products" id="products">
+    <h2 class="section-title">Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <a href="product-detail.html">
+                <div class="product-img" style="background-image: url('oan.webp');"></div>
+            </a>
+            <div class="product-info">
+                <h3>Ô Ăn Quan</h3>
+                <p class="price">100.000đ</p>
+                <button class="add-to-cart" data-name="Ô Ăn Quan" data-price="100000" data-img="oan.webp">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <a href="product-detail.html">
+                <div class="product-img" style="background-image: url('balo.jpg');"></div>
+            </a>
+            <div class="product-info">
+                <h3>Mất Màu</h3>
+                <p class="price">450.000đ</p>
+                <button class="add-to-cart" data-name="Mất Màu" data-price="450000" data-img="balo.jpg">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <a href="product-detail.html">
+                <div class="product-img" style="background-image: url('balobat (1).jpg');"></div>
+            </a>
+            <div class="product-info">
+                <h3>Đồ Ngọt</h3>
+                <p class="price">1.550.000đ</p>
+                <button class="add-to-cart" data-name="Đồ Ngọt" data-price="1550000" data-img="balobat (1).jpg">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <a href="product-detail.html">
+                <div class="product-img" style="background-image: url('deo (2).jpg');"></div>
+            </a>
+            <div class="product-info">
+                <h3>Hồng Hạc</h3>
+                <p class="price">650.000đ</p>
+                <button class="add-to-cart" data-name="Hồng Hạc" data-price="650000" data-img="deo (2).jpg">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+<script src="cart.js" defer></script>
+
+    <footer>
+        <p>&copy; 2024 EcoCycle - Vì một hành tinh xanh</p>
+    </footer>
+
+</body>
+
+</html>

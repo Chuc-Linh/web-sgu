@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+<body>
+    
+    <div class="container">
+    <form class="My_form" action="login.html">
+        <h2>Đăng Ký</h2>
+
+        <div class="Form_group">
+            <label>Tên đăng nhập</label>
+            <input type="text" name="username" placeholder="Tên đăng nhập">
+        </div>
+        <div class="Form_group">
+            <label>Số điện thoại</label>
+            <input type="text" name="phone" placeholder="Số điện thoại">
+        </div>
+        <div class="Form_group">
+            <label>Địa chỉ</label>
+         <input type="text" name="address" placeholder="Số nhà, tên đường...">
+         <div class="address-select">
+            <select name="city" id="City">
+                <option value="" selected> Chọn tỉnh thành</option>
+            </select>
+            <select name="district" id="District">
+                <option value="" selected> Chọn quận huyện</option>
+            </select>
+            </div>
+        </div>
+        <div class="Form_group">
+            <label>Mật khẩu</label>
+            <input type="password" name="password" placeholder="Mật khẩu">
+        </div>
+        <div class="Form_group">
+            <label>Nhập lại mật khẩu</label>
+            <input type="password" name="re-password" placeholder="Mật khẩu">
+        </div>
+        <button type="submit" name="btnRegister">Đăng ký</button>
+    </form>
+    </div>
+</body>
+</html>

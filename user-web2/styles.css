@@ -1,0 +1,170 @@
+.main-layout {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    align-items: flex-start;
+}
+
+.kieuchu{
+    font-family: cursive;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo{
+    float:left;
+    width: 10%;
+    height: 20%;
+    position: relative;
+    margin-left: 10%;
+}
+.header{
+    font-display: flex;
+    text-align: center;
+    width: auto;
+    flex: 1;
+    color:rgb(27, 102, 26);
+    font-size: 50px;
+    font-style: bold;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+.banner{
+    width:95%;
+    display: block;
+    margin: auto;
+}
+
+.dangnhap,.dangky{
+    position: relative;
+    color:black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 10px 5px 10px;
+    margin: 100px 5px 0 0;
+}
+.dangnhap{
+   right: 14px;
+}
+.dangnhap:hover,.dangky:hover{
+    background-color: rgb(63, 207, 142);
+    cursor: pointer;
+}
+
+/* Sidebar menu */
+.sidebar{
+    /*cố định nhưng mà cái side nằm phía dưới, 
+    kéo hết phần banner mới tới side 
+    và cái side đó sẽ cố định khi kéo xuống tiếp 
+    nhưng khi kéo lên qua cái phần side thì nó lại bị tụt theo 
+    và trả chỗ cho banner*/
+    position: sticky;
+    top:0px;
+    margin-top: 40px;
+    display: flex;
+    width:25%;
+    height: 100vh;
+    /* Ép các phần tử con xếp theo cột dọc */
+    flex-direction: column;
+    background: #a8fca8;
+    /* nếu k có thì khi cuộn nó sẽ bị nội dung khác đè lên 
+    và những thằn quan trọng như sidbar,popup thì số lớn đảm bảo
+    nó luôn xuất hiện phía trên*/
+    z-index:1000;
+}
+.sidebar a {
+    /* để hiện ở dạng khối theo chiều dọc*/
+    display: block;
+    /*tạo khoảng cách giữa các block*/
+    padding:15px;
+    color:black;
+    text-decoration: none; 
+    background: #a8fca8;
+    font-size:x-large;
+}
+.sidebar a:hover{
+    font-size:large;
+    background: #75f875;
+}
+.product-area {
+    flex: 1;             /* Chiếm toàn bộ phần còn lại bên phải */
+    display: flex;       /* Nếu có nhiều sản phẩm sẽ nằm ngang */
+    flex-wrap: wrap;     /* Tự xuống dòng khi hết chỗ */
+    padding: 40px 20px;  /* Khoảng cách cho đẹp */
+    gap: 20px;           /* Khoảng cách giữa các hộp sản phẩm */
+    align-content: flex-start;
+}
+
+.content {
+    /* Thay vì width: 250px cố định, ta dùng tính toán */
+    width: calc(25% - 15px); /* 25% là 4 cột, trừ đi gap để không bị tràn */
+    min-width: 200px;        /* Để khi màn hình hơi nhỏ nó không bị quá bé */
+    
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    background: #fff;
+    text-align: center;
+    box-sizing: border-box;  /* Đảm bảo padding không làm tăng chiều rộng hộp */
+}
+
+/* Bo góc cho ảnh sản phẩm */
+.content img {
+    width: 100%;
+    height: 290px;
+    border-radius: 10px;      /* Bo góc nhẹ cho ảnh */
+}
+.content.tui-deo img{
+    height:200px;
+    width:100%;
+    border-radius: 10px;    
+}
+/* Định dạng chung cho cả 2 nút */
+.content button {
+    border-radius: 20px;      
+    padding: 8px 15px;
+    border: 1px solid #333;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.content button:hover{
+    background-color: #a8fca8;
+}
+
+.balojean, .balobat,.balotote,.deo,.tat{
+    width:100%;
+    font-size:x-large;
+}
+/*responsive*/
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        /*nếu k có thì nó sẽ ra center*/
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header {
+        font-size: 30px;
+        text-align: left;
+    }
+    .menu-btn {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .dangnhap, .dangky {
+       position: relative;
+       margin:0 5px 0 410px;
+       right:0;
+    }
+}

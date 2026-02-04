@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng | EcoCycle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Giỏ hàng của bạn</h1>
+</header>
+
+<div class="container">
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Ảnh</th>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thành tiền</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+    </table>
+
+    <div class="total" id="totalPrice"></div>
+    
+<div class="cart-actions" style="margin-top: 20px; text-align: right;">
+    <button class="btn btn-save" onclick="goToCheckout()" style="background: #28a745; color: white; padding: 15px 30px; border: none; font-size: 1.1rem; cursor: pointer;">
+        Tiến hành thanh toán ➔
+    </button>
+</div>
+
+<a href="test11.html" class="btn btn-back">⬅ Tiếp tục mua sắm</a>
+<script src="cart-page.js" defer></script>
+
+</body>
+</html>

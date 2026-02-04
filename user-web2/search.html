@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả tìm kiếm</title>
+    <link rel="stylesheet" href="test22.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Eco<span>Cycle</span></div>
+    <ul class="nav-links">
+        <li><a href="cart.html">Giỏ hàng</a></li>
+        <li><a href="test11.html">Trang chủ</a></li>
+    </ul>
+</nav>
+
+<section class="products">
+    <div class="advanced-search-container" style="margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+        <form id="advancedSearchForm" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <input type="text" id="advKeyword" placeholder="Tên sản phẩm..." style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <select id="advCategory" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="">Tất cả phân loại</option>
+                <option value="balojean">Balo Jean</option>
+                <option value="balobat">Balo Bạt</option>
+                <option value="balotote">Giỏ Tote Bạt</option>
+                <option value="deo">Túi Đeo</option>
+                <option value="tat">Đôi tất</option>
+            </select>
+
+            <input type="number" id="advMinPrice" min="0" placeholder="Giá từ (đ)..." style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 120px;">
+            <input type="number" id="advMaxPrice" min="0" placeholder="đến..." style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 120px;">
+            
+            <button type="button" id="btnFilter" class="search-btn" style="padding: 8px 20px; cursor: pointer; background: #28a745; color: white; border: none; border-radius: 4px;">Lọc kết quả</button>
+        </form>
+    </div>
+
+    <h2 class="section-title">Kết quả: <span id="keyword-text"></span></h2>
+    <div class="product-grid" id="result-list"></div>
+</section>
+
+<script src="cart.js"></script>
+<script src="search-page.js"></script>
+</body>
+</html>
