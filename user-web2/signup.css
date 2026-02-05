@@ -1,0 +1,126 @@
+.Form_group{
+    margin-bottom: 15px;
+}
+
+.My_form h2 {
+    text-align: center; /* Căn giữa chữ */
+    margin-bottom: 20px; /* Tạo khoảng cách với các ô nhập liệu bên dưới */
+    color:#1B5E20; /* Màu sắc tiêu đề (tùy chọn) */
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+input{
+    border: 1px solid #1bb96a;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #086335;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+ label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2E7D32
+ }
+
+  .my-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.my-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #F1F8E9;
+    border-radius: 5px;
+}
+
+/* ====== Định dạng hàng chọn Tỉnh / Huyện ====== */
+.address-select {
+    display: flex;
+    gap: 10px;              /* Khoảng cách giữa 2 ô */
+    margin-top: 8px;
+}
+
+/* Áp dụng style cho select */
+.address-select select {
+    flex: 1;                /* Hai ô chia đều */
+    padding: 10px;
+    border: 1px solid #1bb96a;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Khi focus */
+.address-select select:focus {
+    border-color: #086335;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+ button {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    margin:auto;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+ button:hover {
+    background-color: #45a049; /* Đậm hơn khi di chuột */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#cef3d6; /* Màu nền trang web nhẹ nhàng */
+    margin: 0;
+}
+.container {
+    background-color:#9fc998;    /* Màu nền của khung */
+    padding: 20px;               /* Khoảng cách từ nội dung đến viền khung */
+    width: 350px;                /* Chiều rộng của khung */
+    border-radius: 15px;         /* Bo tròn góc khung */
+    
+    /* Tạo hiệu ứng đổ bóng để khung trông nổi lên */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    
+    /* Viền mỏng để định hình rõ hơn (tùy chọn) */
+    border: 1px solid #eee;
+}
+
+.btn-home {
+    
+    color: rgb(0, 0, 0);
+   
+  }
+  
+  
